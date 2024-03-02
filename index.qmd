@@ -1,7 +1,8 @@
 ---
 title: "Test table column alignment with cross reference"
 format:
-  docx: default
+  docx:
+    keep-md: true
   html:
     embed-resources: true
   pdf: default
