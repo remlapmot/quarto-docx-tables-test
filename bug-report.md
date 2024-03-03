@@ -49,6 +49,8 @@ Now I add @tbl-another, which includes the cross reference using the div syntax.
 :::
 ```
 
-Unfortunately the column alignments are ignored for tables 2 and 3.
+The bug is that column alignments are ignored for tables 2 and 3 in docx output.
 
-I am not 100% sure whether this a Quarto bug or a Pandoc bug. My guess is that it's Quarto, since if I run the intermediate md file through pandoc, the tables do use the specified column alignment.
+I am not 100% sure whether this a Quarto bug or a Pandoc bug. My guess is that it's a Quarto but, since if I run the intermediate md file through pandoc, the tables do use the specified column alignment. And also the column alignments are respected under pandoc-crossref.
+
+If helpful, my test repo is <https://github.com/remlapmot/quarto-docx-tables-test>.
