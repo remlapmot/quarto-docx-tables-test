@@ -1,0 +1,25 @@
+---
+title: "Test table column alignment with cross reference"
+output:
+  bookdown::word_document2: default
+---
+
+A test table with correct column alignment. Taken from [here](https://quarto.org/docs/authoring/tables.html#markdown-tables).
+
+| Default | Left | Right | Center |
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 123  |   123 |  123   |
+| 1       | 1    |     1 |   1    |
+
+: Demonstration of pipe table syntax
+
+Now I add Table \@ref(tab:example), which has includes cross reference. In docx output the column alignment is not adhered to.
+
+| Default | Left | Right | Center |
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 123  |   123 |  123   |
+| 1       | 1    |     1 |   1    |
+
+Table: (\#tab:example) Demonstration of pipe table syntax
